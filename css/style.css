@@ -107,7 +107,26 @@ h1 {
 }
 .card img{max-width: 100%; height: auto;}
 /* .card-detail{background: #222;} */
-.load{display: flex; justify-content: center; position: absolute; display: none; left: 48%; top: 100%;}
+.load{display: flex; justify-content: center; position: absolute; display: none; left: 48%; top: 200%;}
 .card h2{padding: 10px 0;}
 .card h3{padding: 10px 0;}
 .col-4{margin-top: 30px;}
+
+@media screen and (max-width:768px) {
+    .row .col-t-2{flex-basis: 16.66%; max-width: 16.66%;}
+    .row .col-t-3{flex-basis: 25%; max-width: 25%;}
+    .row .col-t-4{flex-basis: 33.33%; max-width: 33.33%;}
+    .row .col-t-6{flex-basis: 50%; max-width: 50%;}
+    .row .col-t-8{flex-basis: 83.33%; max-width: 83.33%;}
+    .row .col-t-12{flex-basis: 100%; max-width: 100%;}
+    .load{display: flex; justify-content: center; position: absolute; display: none; left: 45%; top: 200%;}
+}
+@media screen and (max-width:480px) {
+    .row .col-p-2{flex-basis: 16.66%; max-width: 16.66%;}
+    .row .col-p-3{flex-basis: 25%; max-width: 25%;}
+    .row .col-p-4{flex-basis: 33.33%; max-width: 33.33%;}
+    .row .col-p-6{flex-basis: 50%; max-width: 50%;}
+    .row .col-p-8{flex-basis: 83.33%; max-width: 83.33%;}
+    .row .col-p-12{flex-basis: 100%; max-width: 100%;}
+    .load{display: flex; justify-content: center; position: absolute; display: none; left: 43%; top: 200%;}
+}
